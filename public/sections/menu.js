@@ -18,6 +18,9 @@ class Menu extends HTMLElement{
                     <a class="nav-link" href="categories.html">Categorías</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="loadData.html">Cargar Datos</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="suppliers.html">Proveedores</a>
                 </li>
                 <li class="nav-item">

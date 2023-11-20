@@ -18,5 +18,15 @@ service cloud.firestore {
       allow update: if false;
       allow delete: if false;
     }
+    match /{OrderDetails}/{document=**}{
+      allow read: if true;
+      allow create: if request.resource.data.OrderID is int &&
+                       request.resource.data.ProductID is int &&
+                       request.resource.data.UnitPrice is float &&
+                       request.resource.data.Quantity is float &&
+                       request.resource.data.Discount is float;
+      allow update: if false;
+      allow delete: if false;                  
+    }
   }
 }
